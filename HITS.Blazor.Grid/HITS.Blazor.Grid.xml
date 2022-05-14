@@ -1,0 +1,281 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>HITS.Blazor.Grid</name>
+    </assembly>
+    <members>
+        <member name="T:HITS.Blazor.Grid.GenericSorter`1">
+            <summary>
+            This class is used to sort the list based on a generic object.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:HITS.Blazor.Grid.GenericSorter`1.Sort(System.Collections.Generic.IEnumerable{`0},System.String,System.String)">
+            <summary>
+            Generic Sort Method
+            </summary>
+            <param name="source"></param>
+            <param name="sortBy"></param>
+            <param name="sortDirection"></param>
+            <returns></returns>
+        </member>
+        <member name="T:HITS.Blazor.Grid.GridAttributes">
+            <summary>
+            This class contains properties to controls the features of grid columns.
+            </summary>
+        </member>
+        <member name="M:HITS.Blazor.Grid.GridAttributes.#ctor">
+            <summary>
+            Constructor
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridAttributes.ShowInGrid">
+            <summary>
+            This property controls if a list object property is displayed in the grid.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridAttributes.SortBy">
+            <summary>
+            This property controls if a list object property can be sorted.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridAttributes.FilterBy">
+            <summary>
+            This property controls if a list object property can be filtered.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridAttributes.Align">
+            <summary>
+            This property controls the list object property value alignment.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridAttributes.FormatString">
+            <summary>
+            This property controls the list object property presentation format.
+            </summary>
+        </member>
+        <member name="T:HITS.Blazor.Grid.GridParameters`1">
+            <summary>
+            This class contains properties to control the features of the grid.
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.GridTitle">
+            <summary>
+            The grid title text shown at the top of the grid.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.GridTitleColor">
+            <summary>
+            The grid title and summary text color.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.GridTableColor">
+            <summary>
+            The table text color.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.DataList">
+            <summary>
+            The List of type T containing the data to be displayed in the grid.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.ShowEditColumn">
+            <summary>
+            This property determines if the "Edit" button will be displayed in the grid row.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.ShowFilterRow">
+            <summary>
+            This property determines if the filter text box will be displayed.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.ShowPager">
+            <summary>
+            This property determines if the pager will be displayed.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.ShowAddNew">
+            <summary>
+            This property determines if the Add New button will be displayed at the top of the grid.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.PageSize">
+            <summary>
+            This property determines the number of rows displayed per page.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.PrimaryKeyName">
+            <summary>
+            This property identifies the primary key property.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.EditButtonText">
+            <summary>
+            This property determines the text that will be shown on the edit button.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.BootstrapContainerClass">
+            <summary>
+            This property determines the CSS class for the container.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.BootstrapColumnClass">
+            <summary>
+            This property determines the CSS class for grid columns.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.SummaryColumnName">
+            <summary>
+            This property identifies the column to be summarized.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.SummaryTitle">
+            <summary>
+            This property contains the summary title text to be shown at the top of the grid for the summary value.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.SummaryType">
+            <summary>
+            This property sets the type of aggregate function to be applied to the summary column.
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.GridParameters`1.SummaryFormat">
+            <summary>
+            This property sets formatting of the summary value.
+            </summary>
+        </member>
+        <member name="T:HITS.Blazor.Grid.SimpleGrid`1">
+            <summary>
+            This is the code-behind class for SimpleGrid
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:HITS.Blazor.Grid.SimpleGrid`1.Parameters">
+            <summary>
+            the grid parameters object
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.SimpleGrid`1.OnAddNewEvent">
+            <summary>
+            the method to invoke when the add new button is clicked
+            </summary>
+        </member>
+        <member name="P:HITS.Blazor.Grid.SimpleGrid`1.OnEditEvent">
+            <summary>
+            the method to invoke when the edit button is clicked
+            </summary>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.GetDivClassName(System.String,System.Int32)">
+            <summary>
+            This method returns a bootstrap container or column class name based on the class parameter and desired width.
+            </summary>
+            <param name="className"></param>
+            <param name="value"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.OnParametersSet">
+            <summary>
+            This method loads the initial page after the parameters have been applied.
+            </summary>
+            <remarks>if the render-mode is set to ServerPrerendered in _Host.cshtml then this method may fire twice</remarks>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.SetPageCount(System.Collections.Generic.List{`0})">
+            <summary>
+            This method determines the maximum number of pages for the list based on the page size parameter.
+            </summary>
+            <param name="list"></param>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.ConvertModelToList(System.Object)">
+            <summary>
+            This method converts a model to a List of AttributeNameValue.
+            </summary>
+            <param name="model"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.ShowInGrid(System.String)">
+            <summary>
+            This method get the ShowInGrid attribute for a given property.
+            </summary>
+            <param name="propertyName"></param>
+            <returns>true if the property should be display in the grid.</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.SortBy(System.String)">
+            <summary>
+            This method get the SortBy attribute for a given property.
+            </summary>
+            <param name="propertyName"></param>
+            <returns>true if the filter by sort by icon should be displayed.</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.FilterBy(System.String)">
+            <summary>
+            This method get the FilterBy attribute for a given property.
+            </summary>
+            <param name="propertyName"></param>
+            <returns>true if the filter by input box should be displayed.</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.Align(System.String)">
+            <summary>
+            This method get the Align attribute for a given property.
+            </summary>
+            <param name="propertyName"></param>
+            <returns>left, right or center, defaults to left</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.FormatString(System.String,System.Object)">
+            <summary>
+            This method returns a formatted property value.
+            </summary>
+            <param name="propertyName"></param>
+            <param name="propertyValue"></param>
+            <returns>a formatted property value using the FormatString or the property value</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.GetPrimaryKeyValue(`0)">
+            <summary>
+            This method gets the primary key property value for the given model.
+            </summary>
+            <param name="model">the model object</param>
+            <returns>primary key property value</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.OnFilterInput">
+            <summary>
+            This method applies the filter value.
+            </summary>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.OnCancelFilerClick">
+            <summary>
+            This method removes list filtering.
+            </summary>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.OnSortClick(System.String)">
+            <summary>
+            This method applies list sorting.
+            </summary>
+            <param name="columnName"></param>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.GetPage(System.String)">
+            <summary>
+            This method displays the indicated page.
+            </summary>
+            <param name="direction">Direction can be a word like next, previous last or first.  Direction can also be an integer number.</param>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.GetEditButtonTitle(`0)">
+            <summary>
+            This method returns title text for the edit button.
+            </summary>
+            <param name="model">the model</param>
+            <returns>string</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.GetSummaryText">
+            <summary>
+            This method configures the summary text based on the summary parameters. 
+            </summary>
+            <returns>formatted summary text</returns>
+        </member>
+        <member name="M:HITS.Blazor.Grid.SimpleGrid`1.BuildSummaryList">
+            <summary>
+            This method build a list of the summary property.
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

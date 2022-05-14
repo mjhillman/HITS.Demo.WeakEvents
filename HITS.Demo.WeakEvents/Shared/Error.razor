@@ -1,0 +1,20 @@
+﻿
+<CascadingValue Value=this>
+    @ChildContent
+</CascadingValue>
+
+@code {
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public async Task ProcessErrorAsync(Exception ex, string extraInfo = "")
+    {
+        try
+        {
+            //log or send email here
+        }
+        catch (Exception)
+        {
+        }
+    }
+}

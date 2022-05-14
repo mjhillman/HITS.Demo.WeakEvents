@@ -1,0 +1,30 @@
+﻿@page "/fetchdata"
+@using HITS.Blazor.Grid
+@using HITS.Demo.WeakEvents.Services
+
+<PageTitle>Weather forecast</PageTitle>
+
+<h1>Session Log</h1>
+
+<p>This component demonstrates fetching data from SQLite.</p>
+
+@if (_gridViewModel.SessionList == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div class="container-fluid pt-3">
+        <div class="row">
+            <div class="col-md-12">
+                <button class="btn btn-secondary" @onclick="EraseLog">Erase Log</button>
+                <br/><br/>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <SimpleGrid T="SessionModel" Parameters="_gridViewModel.GridParameters" />
+            </div>
+        </div>
+    </div>
+}

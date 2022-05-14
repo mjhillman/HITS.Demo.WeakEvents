@@ -1,0 +1,57 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+	<Nullable>disable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>7c78fbec-755b-4ad6-b787-9e980f675809</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LocalLog.sdb" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="LocalLog.sdb">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\.editorconfig" Link=".editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HITS.Blazor.Grid\HITS.Blazor.Grid.csproj" />
+    <ProjectReference Include="..\HITS.Extensions.Object\HITS.Extensions.Object.csproj" />
+    <ProjectReference Include="..\HITS.LIB.DataAccess\HITS.LIB.DataAccess.csproj" />
+    <ProjectReference Include="..\HITS.LIB.Ip\HITS.LIB.Ip.csproj" />
+    <ProjectReference Include="..\HITS.LIB.WeakEvents\HITS.LIB.WeakEvents.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Update="wwwroot\images\button_green_first.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\button_green_last.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\button_green_left.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\button_green_right.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Doc-Cancel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Update="wwwroot\images\Sort_16.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

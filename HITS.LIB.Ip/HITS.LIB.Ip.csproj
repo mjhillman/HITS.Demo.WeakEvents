@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="IpStack.cs" />
+    <Compile Remove="IpStackRequest.cs" />
+    <Compile Remove="IpStackResponse.cs" />
+  </ItemGroup>
+
+</Project>
